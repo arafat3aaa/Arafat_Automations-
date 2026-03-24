@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFlow Pro | Automation Expert Portfolio</title>
+  <meta name="description" content="Automation expert specializing in workflow automation, AI integrations, and business process optimization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span>AutoFlow<span class="logo-accent">Pro</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#automations">Automations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-badge">🚀 Available for Projects</div>
+        <h1 class="hero-title">
+          I Build <span class="gradient-text">Automations</span><br/>
+          That Work While<br/>You Sleep
+        </h1>
+        <p class="hero-desc">
+          Automation expert specializing in workflow automation, AI integrations, 
+          and business process optimization. I turn repetitive tasks into seamless systems.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Automations Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Clients Served</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">k+</span>
+            <span class="stat-label">Hours Saved</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#automations" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
+      <!-- Hero Image + Social Links -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-card" id="heroImageCard">
+          <div class="image-switcher">
+            <img src="images/profile1.jpg" alt="Profile Photo 1" class="profile-img active" id="heroImg1" />
+            <img src="images/profile2.jpg" alt="Profile Photo 2" class="profile-img" id="heroImg2" />
+          </div>
+          <div class="floating-badge badge-top">
+            <span>⚡</span> n8n Expert
+          </div>
+          <div class="floating-badge badge-bottom">
+            <span>🐍</span> Python Dev
+          </div>
+        </div>
+        <div class="image-dots" id="imageDots">
+          <button class="dot active" onclick="switchImage(0)"></button>
+          <button class="dot" onclick="switchImage(1)"></button>
+        </div>
+        <!-- SOCIAL MEDIA LINKS (under photos) -->
+        <div class="hero-socials">
+          <a href="https://facebook.com/yourprofile" target="_blank" class="social-btn" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/yourprofile" target="_blank" class="social-btn" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/yourprofile" target="_blank" class="social-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://t.me/yourhandle" target="_blank" class="social-btn" title="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 6.75a2.25 2.25 0 0 0 .126 4.21l3.918 1.095 2.064 6.392a.75.75 0 0 0 1.26.281l2.535-2.657 4.192 3.073a2.25 2.25 0 0 0 3.494-1.385l2.75-16.5a2.25 2.25 0 0 0-2.817-2.474zm-1.415 2.053-.03.156-2.7 16.2-4.738-3.471 3.088-3.234a.75.75 0 0 0-1.046-1.077L9.98 16.39 8.3 11.125l12-4.908.084-.037a.768.768 0 0 1 .399-.094z"/></svg>
+          </a>
+          <a href="https://youtube.com/@yourhandle" target="_blank" class="social-btn" title="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Me</span>
+        <h2>The Automation <span class="gradient-text">Mindset</span></h2>
+        <p>I believe every hour spent on repetitive tasks is an hour stolen from creativity and growth.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <div class="about-photo-card">
+            <img src="images/profile2.jpg" alt="Profile" class="about-photo" id="aboutPhoto" />
+            <div class="about-photo-overlay">
+              <div class="about-status">
+                <span class="status-dot"></span> Open to Work
+              </div>
+            </div>
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-num">3+</span>
+            <span class="exp-text">Years Experience</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3>Hi, I'm an Automation Expert 👋</h3>
+          <p>
+            I specialize in building powerful, reliable automation systems that eliminate manual work
+            and supercharge productivity. From simple email automation to complex multi-step AI workflows,
+            I craft solutions that scale with your business.
+          </p>
+          <p>
+            My toolbox includes n8n and Python — allowing me to connect
+            virtually any app and automate any process you can imagine.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="h-icon">🎯</span>
+              <div>
+                <strong>Results-Driven</strong>
+                <p>Every automation is built with measurable ROI in mind.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">🔗</span>
+              <div>
+                <strong>Seamless Integration</strong>
+                <p>Connecting your tools into one smooth ecosystem.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="h-icon">🤖</span>
+              <div>
+                <strong>AI-Powered</strong>
+                <p>Leveraging the latest AI to make workflows smarter.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Services</span>
+        <h2>What I <span class="gradient-text">Offer</span></h2>
+        <p>End-to-end automation solutions tailored to your business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Workflow Automation</h3>
+          <p>Build end-to-end automated workflows that eliminate manual tasks using n8n.</p>
+          <ul class="service-list">
+            <li>Multi-step workflow design</li>
+            <li>Error handling &amp; alerts</li>
+            <li>Scheduling &amp; triggers</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="card-badge">Most Popular</div>
+          <div class="service-icon">🤖</div>
+          <h3>AI Integrations</h3>
+          <p>Integrate powerful AI capabilities — ChatGPT, Claude, Gemini — into your existing workflows.</p>
+          <ul class="service-list">
+            <li>AI-powered content generation</li>
+            <li>Intelligent data processing</li>
+            <li>Chatbot &amp; assistant builds</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🐍</div>
+          <h3>Python Automation</h3>
+          <p>Custom Python scripts for scraping, data processing, and automating any complex task.</p>
+          <ul class="service-list">
+            <li>Web scraping &amp; data mining</li>
+            <li>API scripting &amp; bots</li>
+            <li>Scheduled task automation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Data Automation</h3>
+          <p>Automate data collection, cleaning, processing, and reporting across spreadsheets and databases.</p>
+          <ul class="service-list">
+            <li>Google Sheets automation</li>
+            <li>Database sync</li>
+            <li>Report generation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📧</div>
+          <h3>Email &amp; CRM Automation</h3>
+          <p>Automate your entire email pipeline — from lead capture to nurture sequences and follow-ups.</p>
+          <ul class="service-list">
+            <li>Lead capture flows</li>
+            <li>CRM data sync</li>
+            <li>Drip campaigns</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3>eCommerce Automation</h3>
+          <p>Automate order processing, inventory management, and customer communication for your store.</p>
+          <ul class="service-list">
+            <li>Order fulfillment flows</li>
+            <li>Inventory alerts</li>
+            <li>Customer notifications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTOMATIONS SHOWCASE — SLIDE CAROUSEL ========== -->
+  <section class="automations" id="automations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Portfolio</span>
+        <h2>My <span class="gradient-text">Automations</span></h2>
+        <p>Real automations I've built — slide through to explore them.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="n8n">n8n</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider-wrapper">
+        <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous">&#8592;</button>
+        <div class="slider-viewport" id="sliderViewport">
+          <div class="slider-track" id="sliderTrack">
+            <!-- Cards rendered by JS -->
+          </div>
+        </div>
+        <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next">&#8594;</button>
+      </div>
+
+      <!-- Slider Dots -->
+      <div class="slider-dots" id="sliderDots"></div>
+
+      <div class="upload-cta">
+        <p>More automations coming soon. Have a project? <a href="#contact">Let's build it together.</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact</span>
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p>Have a project in mind? I'd love to hear about it.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>your@email.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">💬</span>
+            <div>
+              <strong>Telegram</strong>
+              <p>@yourhandle</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <p>linkedin.com/in/yourprofile</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">💼</span>
+            <div>
+              <strong>Upwork</strong>
+              <p>Available for freelance</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <select id="service">
+              <option value="" disabled selected>Select a Service</option>
+              <option>n8n Workflow Automation</option>
+              <option>Python Automation</option>
+              <option>AI Integration</option>
+              <option>Data Automation</option>
+              <option>Email &amp; CRM</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full" id="submitBtn">
+            Send Message ✉️
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER — Stay With Us ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-stay">
+        <div class="stay-glow"></div>
+        <p class="stay-label">Don't miss what's next</p>
+        <h2 class="stay-title">Stay <span class="gradient-text">With Us</span></h2>
+        <p class="stay-sub">Follow along for automation tips, new projects, and behind-the-scenes insights.</p>
+        <div class="stay-socials">
+          <a href="https://facebook.com/yourprofile" target="_blank" class="social-btn" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/yourprofile" target="_blank" class="social-btn" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/yourprofile" target="_blank" class="social-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://t.me/yourhandle" target="_blank" class="social-btn" title="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 6.75a2.25 2.25 0 0 0 .126 4.21l3.918 1.095 2.064 6.392a.75.75 0 0 0 1.26.281l2.535-2.657 4.192 3.073a2.25 2.25 0 0 0 3.494-1.385l2.75-16.5a2.25 2.25 0 0 0-2.817-2.474zm-1.415 2.053-.03.156-2.7 16.2-4.738-3.471 3.088-3.234a.75.75 0 0 0-1.046-1.077L9.98 16.39 8.3 11.125l12-4.908.084-.037a.768.768 0 0 1 .399-.094z"/></svg>
+          </a>
+          <a href="https://youtube.com/@yourhandle" target="_blank" class="social-btn" title="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+        <div class="footer-copy">
+          <p>© <span id="year"></span> AutoFlow Pro · Built with ❤️ for automation.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== AUTOMATION DETAIL MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
